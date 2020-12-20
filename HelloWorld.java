@@ -11,20 +11,21 @@ public class HelloWorld {
         System.out.println("刚才输入的数字是：" + f0);
         System.out.println("**************************");
 
-        Scanner sb = new Scanner(System.in);
+//        Scanner sb = new Scanner(System.in);
         System.out.println("输入第一个数字：");
         float temp0 = 0;
-        if(sb.hasNext()){
-            temp0 = sb.nextFloat();
+        if(sa.hasNext()){
+            temp0 = sa.nextFloat();
         }
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
         System.out.println("输入第二个数字：");
         float temp1 = 0;
-        if(sc.hasNext()){
-            temp1 = sc.nextFloat();
+        if(sa.hasNext()){
+            temp1 = sa.nextFloat();
         }
-        sc.close();
+        sa.close();
+
         float f1 = temp0 +temp1;
         System.out.println("两数之和为："+ f1);
 
