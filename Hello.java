@@ -14,7 +14,7 @@ public class Hello {
         System.out.println(i);                           //i:6
 
         i = 1;
-        boolean b0 = !(i++ == 3) ^ (i++ ==2) && (i++==3);
+        boolean b0 = !(i++ == 3) ^ (i++ == 2) && (i++ == 3);
         System.out.println(b0);
         System.out.println(i);
 

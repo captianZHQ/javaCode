@@ -16,5 +16,20 @@ public class BmI {
 
         System.out.println("你的BMI指数是：" + f2);
         System.out.println("**************************");
+
+        if(f2<18.5){
+            System.out.println("体重过轻");
+        }else if(f2>=18.5 && f2<24){
+            System.out.println("正常范围");
+        }else if(f2>=24 && f2<27) {
+            System.out.println("体重过重");
+        }else if(f2>=27 && f2<30){
+                System.out.println("轻度肥胖");
+        }else if(f2>=30 && f2<35){
+            System.out.println("中度肥胖");
+        }else if(f2>=35 ) {
+            System.out.println("重度肥胖");
+        }
+
     }
 }
