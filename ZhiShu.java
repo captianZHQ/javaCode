@@ -1,6 +1,5 @@
 package test;
 
-import java.util.ArrayList;
 import java.util.*;
 
 public class ZhiShu {
@@ -16,7 +15,7 @@ public class ZhiShu {
             if (j > Math.sqrt(i)) {
 //                System.out.printf("%d\t", i);
                 list.add(i);
-                System.out.println(list);
+//                System.out.println(list);
 //                int item = (Integer) list.get(0); //自动拆箱
             }
         }
@@ -26,10 +25,15 @@ public class ZhiShu {
         System.out.println(Arrays.toString(a));
         //100以内的数写成两个质数之和
         for (int l = 2; l <=100 ; l++) {
+            if (l%2!=0)
+                continue;
+            flag:
             for (int m = 0; m < a.length; m++) {
                 for (int n = 0; n < a.length; n++) {
-                    if(l==a[m]+a[n])
+                    if(l==a[m]+a[n]){
                         System.out.println(l+"="+a[m]+"+"+a[n]);
+                        break flag;
+                    }
                 }
             }
         }
